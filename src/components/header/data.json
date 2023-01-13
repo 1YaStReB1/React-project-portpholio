@@ -1,0 +1,32 @@
+[
+  {
+    "id": "home",
+    "text":"Главная",
+    "icon": "uil uil-home"
+  },
+  {
+    "id": "about",
+    "text":"Обо мне",
+    "icon": "uil uil-user"
+  },
+  {
+    "id": "skills",
+    "text":"Навыки",
+    "icon": "uil uil-file-alt"
+  },
+  {
+    "id": "services",
+    "text":"Штучки",
+    "icon": "uil uil-briefcase-alt"
+  },
+  {
+    "id": "portfolio",
+    "text":"Квалификация",
+    "icon": "uil uil-scenery"
+  },
+  {
+    "id": "contact",
+    "text":"Контакты",
+    "icon": "uil uil-message"
+  }
+]

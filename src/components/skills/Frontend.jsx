@@ -1,4 +1,5 @@
 import React from 'react'
+import SkillsData from './SkillsData'
 
 const Frontend = () => {
   return (
@@ -6,59 +7,25 @@ const Frontend = () => {
         <h3 className="skills__title">Фронтенд разработка</h3>
         <div className="skills__box">
           <div className="skills__group">
-            <div className="skills__data">
-              <i className='bx bx-badge-check' ></i>
-              <div>
-                <h3 className="skills__name">HTML</h3>
-                <span className="skills__level">Профессионал</span>
-              </div>
+            
+            <SkillsData  title="HTML" subtitle="Профессионал" />
+            <SkillsData  title="CSS" subtitle="Профессионал" />
+            <SkillsData  title="JavaScript" subtitle="Начинающий" />
+           
             </div>
-
-            <div className="skills__data">
-              <i className='bx bx-badge-check' ></i>
-              <div>
-                <h3 className="skills__name">CSS</h3>
-                <span className="skills__level">Профессионал</span>
-              </div>
-            </div>
-
-            <div className="skills__data">
-              <i className='bx bx-badge-check' ></i>
-              <div>
-                <h3 className="skills__name">JavaScript</h3>
-                <span className="skills__level">Начинающий</span>
-              </div>
-            </div>
-          </div>
+            
 
           <div className="skills__group">
-            <div className="skills__data">
-              <i className='bx bx-badge-check' ></i>
-              <div>
-                <h3 className="skills__name">Bootstrap</h3>
-                <span className="skills__level">Миддл</span>
-              </div>
+            
+
+            <SkillsData  title="Bootstrap" subtitle="Миддл" />
+            <SkillsData  title="Git" subtitle="Миддл" />
+            <SkillsData  title="React" subtitle="Начинающий" />
+
+
+
             </div>
-
-            <div className="skills__data">
-              <i className='bx bx-badge-check' ></i>
-              <div>
-                <h3 className="skills__name">Git</h3>
-                <span className="skills__level">Миддл</span>
-              </div>
-            </div>
-
-            <div className="skills__data">
-              <i className='bx bx-badge-check' ></i>
-              <div>
-                <h3 className="skills__name">React</h3>
-                <span className="skills__level">Начинающий</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+      </div>
     </div>
   )
 }

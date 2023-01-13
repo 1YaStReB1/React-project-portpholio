@@ -2,6 +2,7 @@ import React, { useRef,  useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import "../services/services.css"
+import ContactCard from "./ContactCard";
 
 const Contact = () => {
   const form = useRef();
@@ -44,44 +45,12 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Напиши</h3>
           <div className="contact__info">
-            <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
+            
+            <ContactCard icon="bx-mail-send" title="Email" subtitle="nikolaev-dmitrii2001@mail.ru" href="mailto:nikolaev-dmitrii2001@mail.ru" />
+            <ContactCard icon="bxl-whatsapp" title="Whatsapp" subtitle="Не звоните" href="https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!" />
+            <ContactCard icon="bxl-messenger" title="Messenger" subtitle="И сюда не пишите" href="#" />
 
-              <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-subtitle">nikolaev-dmitrii2001@mail.ru</span>
-
-              <a
-                href="mailto:nikolaev-dmitrii2001@mail.ru"
-                className="contact__button"
-              >
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-
-            <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
-
-              <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-subtitle">Не звоните</span>
-
-              <a
-                href="https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!"
-                className="contact__button"
-              >
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-
-            <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
-
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-subtitle">И сюда не пишите</span>
-
-              <a href="https://m.me/crypticalcoder" className="contact__button">
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
+            
           </div>
         </div>
 
@@ -117,7 +86,7 @@ const Contact = () => {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Опишите ваш проект"
+                placeholder="Опишите вашу реакцию"
               ></textarea>
             </div>
 
